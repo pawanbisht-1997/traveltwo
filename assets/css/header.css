@@ -1,0 +1,465 @@
+
+header {
+    background-color: #fff;
+    width: 100%;
+    padding: 5px 0;
+  
+  }
+  header svg{
+    width: 45px;
+    height: 45px;
+  }
+  header .phoneemailmain{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 30px;
+  }
+  .header-fixed {
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+    animation: 1s linear forwards fadeInDown;
+  }
+  
+  .header-fixed, .scrolled.navbar {
+    top: 0;
+    background-color: #fff!important;
+    position: fixed;
+    z-index: 9;
+  }
+  
+  .phonhead, .emailhead {
+    font-size: .9rem;
+    font-weight: 500;
+  }
+  .emailhead {
+    padding-left: 40px;
+  }
+  
+  .emailhead svg {
+    width: 28px;
+    height: 14px;
+    margin-top: -4px;
+  }
+  
+  .complogo {
+    text-align: center;
+  }
+  
+  .complogo img {
+    width: 30%;
+  }
+  .rightheadpart ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .rightheadpart li{
+    font-size: .81rem;
+    font-weight: 500;
+  }
+  /* Search head */
+  
+  .rightheadpart {
+    position: relative;
+  }
+  
+  .rightheadpart svg{
+    width: 30px;
+    height: 19px;
+  }
+  
+  .add-on .input-group-btn > .btn {
+    border-left-width:0;left:-2px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  }
+  
+  
+  /* stop the glowing blue shadow */
+  .add-on .form-control:focus {
+   box-shadow:none;
+   -webkit-box-shadow:none; 
+   border-color:#cccccc; 
+  }
+  
+  .my-navbar-nav > li > a {
+    border-right: 1px solid #ddd;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  .my-navbar-nav:last-child{ border-right:0}
+  .round-btn{
+    height: 50px;
+    width: 50px;
+    background-color:transparent;
+    border-radius: 34px;
+    text-align: center;
+    line-height: 50px;
+    color:gray;
+    float: right;
+  }
+  .flip-icon{
+     -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+  }
+  .searchbox {
+    cursor: pointer;
+    }
+  .hidden-search-box{
+    display: none;
+    position:absolute;
+    background-color: rgb(255 255 255);
+    height: 50px;
+    width: 100%;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: -1px 0px 5px #00000029;
+      border-radius: 8px;
+      top: 48px;
+  }
+  .addon-btn{
+    width: 50px;
+    height:50px;
+    background-color: rgb(37, 51, 66);
+    border: 0 none;
+    color: #ffffff;
+    box-shadow: -1px 0px 5px #00000029;
+    border-radius: 0;
+  }
+  .addon-text-box, .addon-text-box:active{
+    background-color: #000;
+    border: 0 none;
+    color:  #fff;
+    border-radius: 0;
+    height: 50px;
+   }
+   .addon-text-box, .addon-text-box.form-control:focus{
+    background-color: #000;
+    color: #fff;
+   }
+  
+   .traingle {
+    height: 5px;
+    width: 5px;
+    background-color: transparent;
+    border-left: 8px transparent solid;
+    border-right: 8px transparent solid;
+    border-bottom: 8px rgb(0 0 0) solid;
+    float: left;
+    margin-top: -8px;
+    margin-left: 50px;
+  }
+  div#show-search-box svg.closeicon {
+    display: block;
+  }
+  
+  div#show-search-box svg.searchicon {
+    display: none;
+  }
+  
+  /* Search head end */
+  
+  li.enaqireNow{
+    background-color: #e58726;
+    }
+  li.enaqireNow a{
+    width: 100%;
+    display: inline-block;
+    height: 100%;  
+    font-size: .8rem;
+    padding:.5rem 1rem;
+    color: #fff;
+    letter-spacing: 2.5px;
+  }
+  
+  
+  /* MEGAMENU STYLE
+  -------------------------------------------------- */
+  .customnav {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    
+  }
+  
+  .customnavigation{
+    width: 100%;
+    border-top: 3px solid #f2f2f2;
+    background: #ffffffd9;
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .dropdown-menu.show {
+    -webkit-animation: fadeIn 0.3s alternate;
+    /* Safari 4.0 - 8.0 */
+    animation: fadeIn 0.3s alternate;
+  }
+  
+  .nav-item.dropdown.dropdown-mega {
+    position: static;
+  }
+  .nav-item.dropdown.dropdown-mega .dropdown-menu {
+    width: 100%;
+    top: 48px;
+    left: 0;
+  }
+  .customnav .dropdown-menu.shadow.show {
+    background: #000000f5;
+    border-radius: 0;
+    border: none;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    padding: 0;
+    outline: none;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar-toggler .hamburger-toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    z-index: 11;
+    float: right;
+  }
+  .navbar-toggler .hamburger-toggle .hamburger {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(0deg);
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    height: 50%;
+    pointer-events: none;
+  }
+  .navbar-toggler .hamburger-toggle .hamburger span {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background: #333;
+    border-radius: 2px;
+    z-index: 1;
+    transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), all 0.2s ease-in-out;
+    left: 0px;
+  }
+  .navbar-toggler .hamburger-toggle .hamburger span:first-child {
+    top: 10%;
+    transform-origin: 50% 50%;
+    transform: translate(0% -50%) !important;
+  }
+  .navbar-toggler .hamburger-toggle .hamburger span:nth-child(2) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .navbar-toggler .hamburger-toggle .hamburger span:last-child {
+    left: 0px;
+    top: auto;
+    bottom: 10%;
+    transform-origin: 50% 50%;
+  }
+  .navbar-toggler .hamburger-toggle .hamburger.active span {
+    position: absolute;
+    margin: 0;
+  }
+  .navbar-toggler .hamburger-toggle .hamburger.active span:first-child {
+    top: 45%;
+    transform: rotate(45deg);
+  }
+  .navbar-toggler .hamburger-toggle .hamburger.active span:nth-child(2) {
+    left: 50%;
+    width: 0px;
+  }
+  .navbar-toggler .hamburger-toggle .hamburger.active span:last-child {
+    top: 45%;
+    transform: rotate(-45deg);
+  }
+  
+  .icons {
+    display: inline-flex;
+    margin-left: auto;
+  }
+  .icons a {
+    transition: all 0.2s ease-in-out;
+    padding: 0.2rem 0.4rem;
+    color: #ccc !important;
+    text-decoration: none;
+  }
+  .icons a:hover {
+    color: white;
+    text-shadow: 0 0 30px white;
+  }
+  
+  .customnavigation a.nav-link {
+    font-size: 0.71rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 0.5rem 1rem!important; 
+    color: #000!important;
+  }
+  
+  .customnavigation .dropdown-menu.shadow.show .mega-content .container {
+    /* padding: 20px 135px;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto; */
+  }
+  .customnavigation .dropdown-menu.shadow.show .mega-content .container .destinationsWrap {
+    -moz-column-count: 9;
+    column-count: 9;
+    margin: 0;
+      padding: 0;
+      -moz-column-gap: 1.3em;
+      column-gap: 1.3em;
+      font-size: .85em;
+      height: 480px;
+  }
+  .customnavigation .dropdown-menu.shadow.show .mega-content .container .destinationsWrap .destinationsList:first-child {
+    height: 400px;
+  }
+  
+  .customnavigation .dropdown-menu.shadow.show .mega-content .container .destinationsWrap .destinationsList {
+    display: inline-block;
+    background: 0 0;
+    padding: 1em 1em 0;
+    margin: 0;
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 0 0 0 0 #ccc;
+    color: #fff;
+    font-size: .85em;
+  }
+  
+  .customnavigation .dropdown-menu.shadow.show .mega-content .container .destinationsWrap .destinationsList .destHeading {
+    color: #fff;
+    text-align: left;
+    padding: 0;
+    height: auto!important;
+    font-size: 13px!important;
+    text-transform: capitalize;
+    line-height: 1.38;
+    letter-spacing: 0;
+  }
+  
+  
+  .customnavigation .dropdown-menu.shadow.show .mega-content .container .destinationsWrap .destinationsList .countries-list {
+    margin-top: 5px;
+  }
+  
+  .customnavigation .dropdown-menu.shadow.show .mega-content .container .destinationsWrap .destinationsList .countries-list ul li a {
+    height: auto;
+    opacity: 1;
+    color: #888f8f;
+    font-size: 13px;
+    line-height: 19px;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    font-weight: 400;
+    display: block;
+    align-items: unset;
+    text-align: left;
+    padding: 0;
+  }
+  
+  .container .holidaysWrap .row .leftSideHolidayMenu {
+    padding-top: 30px;
+  }
+  .container .holidaysWrap .row .leftSideHolidayMenu li {
+    display: block;
+    position: relative;
+    margin: 0;
+    float: left;
+    width: 33.33%;
+    padding: 0 10px 30px;
+    text-align: center;
+  }
+  .container .holidaysWrap .row .leftSideHolidayMenu li .thumb {
+    margin-bottom: 20px;
+  }
+  .container .holidaysWrap .row .leftSideHolidayMenu li .thumb img {
+    width: 100%;
+    height: 87.72px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .container .holidaysWrap .row .leftSideHolidayMenu li .title {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #fff;
+    font-size: .9rem;
+    line-height: 1.38;
+    }
+    .container .holidaysWrap .row .topSideHolidayMenu {
+      padding-top: 20px;
+  }
+  .container .holidaysWrap .row .leftSideHolidayMenu li a {
+    height: 130px;
+  }
+  .container .holidaysWrap .row .topSideHolidayMenu li {
+    float: left;
+    width: 50%;
+    padding: 0;
+  }
+  
+  .container .holidaysWrap .row .topSideHolidayMenu li a {
+    justify-content: space-between;
+    height: auto;
+    text-align: left;
+    align-items: center;
+    padding: 0 13px;
+    font-size: .75rem;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 29px;
+  }
+  
+  .container .holidaysWrap .row .allLink {
+    max-width: 90%;
+    margin: 7px 0 0 10px;
+    clear: both;
+    float: left;
+    width: 90%;
+  }
+  .container .holidaysWrap .row .allLink a {
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border-top: 1px dashed #444;
+    border-bottom: 1px dashed #444;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: capitalize;
+    transition: all .2s ease-in-out;
+    letter-spacing: 2px;
+    padding: 0 13px;
+    position: relative;
+    display: flex;
+  }
+  

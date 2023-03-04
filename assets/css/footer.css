@@ -1,0 +1,99 @@
+.footercustom{
+    padding:3rem 2rem 0 2rem;
+    background-color: #f3f3f3;
+    margin-top: 4rem;
+  }
+  .footercustom .linksfooter h3 {
+    font-size: .9rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #8b8b8b;
+    margin-bottom: 1rem;
+    letter-spacing: .3px;
+  }
+  .footercustom .linksfooter a{
+    color:#000;
+    font-size: .8rem;
+  }
+  li.socialcustomicons {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  li.socialcustomicons svg{
+    margin-right: .5rem;
+    width: 35px;
+    height: 35px;
+  }
+  li.socialcustomicons a svg:hover #twitter, a svg:hover #facebook_2_, a svg:hover #linkedin  { 
+    fill: #111;
+  }
+  li.socialcustomicons a svg:hover #Path_1, a svg:hover #Path_2, a svg:hover #Ellipse_1, a svg:hover #Path_3, a svg:hover #Path_4{
+    fill: #111;
+  }
+  .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 1px solid #b1aeab;
+    border-right: none;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    font-size: .8rem;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #787878;
+    background: #787878;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .searchButton svg{
+    height: 17px;
+    width: 17px;
+  }
+  .destinationfooter {
+    display: flex;
+    position: relative;
+    padding: 2rem 0;
+    border-top: 1px dashed #bbb;
+  }
+  .destinationfooter .footercol-5{
+    width: 20%;
+    padding-right: 15px;
+  }
+  .destinationfooter h3 {
+    font-size: .9rem;
+    text-transform: uppercase;
+    color: #8b8b8b;
+    padding: 0 3px 0 0;
+    min-height: 40px;
+  }
+  .destinationfooter a{
+    color: #747474;
+    font-size: .8rem;
+  }
+  .destinationfooter a:hover{
+    color: #111;}
+  
+    .footercompanyname{
+      padding: 2rem 0 2rem 0;
+      text-align: center;
+      font-size: .8rem;
+      border-top: 1px dashed #bbb;
+    }
